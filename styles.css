@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    line-height: 1.5;
+    height: 100vh;
+    width: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    margin: 10px;
+}
+
+span {
+    display: inline-block;
+    height: 20px;
+    width: 220px;
+    background-color: #3f51b5;
+    border-radius: 20px;
+    margin: 10px;
+    transition: all 300ms ease-in-out;
+}
+
+span:nth-child(3) {
+    width: 150px;
+    /*have the transform start from left*/
+    /*transform-origin: left;*/
+}
+
+/*Hover Effect*/
+a:hover span:nth-child(1) {
+    transform: translateY(220%) rotate(-45deg);
+}
+
+a:hover span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+a:hover span:nth-child(3) {
+    transform: scale(0,1);
+}
